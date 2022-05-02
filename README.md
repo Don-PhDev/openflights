@@ -4,16 +4,16 @@
 This app is intended to be a simple example of a CRUD app built with **Ruby on Rails** and **React.js** using **Webpacker**.
 
 ---
-![OpenFlights Home](https://github.com/zayneio/open-flights/blob/master/app/assets/images/index-demo.png?raw=true)
+![OpenFlights Home](https://github.com/Don-PhDev/open-flights/blob/master/app/assets/images/index-demo.png?raw=true)
 ---
-![OpenFlights Show](https://github.com/zayneio/open-flights/blob/master/app/assets/images/show-demo.png?raw=true)
+![OpenFlights Show](https://github.com/Don-PhDev/open-flights/blob/master/app/assets/images/show-demo.png?raw=true)
 
 
 ---
 
 This app uses:
 
-* Ruby version: `2.7`
+* Ruby version: `2.7.4`
 * Rails version: `6.0.3.4`
 * Database: `postgresql`
 * React version: `16.12.0`
