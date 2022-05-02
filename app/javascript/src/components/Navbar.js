@@ -81,7 +81,7 @@ const Navbar = (props) => {
                     { 
                     isAuth ? 
                     <Fragment>
-                      <li><Link to="/">Home</Link></li>
+                      <li></li>
                       <li><a onClick={logout}>Log Out</a></li>
                     </Fragment> :
                     <Fragment>
