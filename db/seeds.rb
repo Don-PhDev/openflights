@@ -1,36 +1,49 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+def data_destroyer
+  User.destroy_all
+  Airline.destroy_all
+end
 
+def data_creator
+  User.create(
+    email: "test@gmail.com",
+    password: "password"
+  )
 
-Airline.create([
-  { 
-    name: "United Airlines",
-    image_url: "https://open-flights.s3.amazonaws.com/United-Airlines.png"
-  }, 
-  { 
-    name: "Southwest",
-    image_url: "https://open-flights.s3.amazonaws.com/Southwest-Airlines.png"
-  },
-  { 
-    name: "Delta",
-    image_url: "https://open-flights.s3.amazonaws.com/Delta.png" 
-  }, 
-  { 
-    name: "Alaska Airlines",
-    image_url: "https://open-flights.s3.amazonaws.com/Alaska-Airlines.png" 
-  }, 
-  { 
-    name: "JetBlue",
-    image_url: "https://open-flights.s3.amazonaws.com/JetBlue.png" 
-  }, 
-  { 
-    name: "American Airlines",
-    image_url: "https://open-flights.s3.amazonaws.com/American-Airlines.png" 
-  }
-])
-      
+  Airline.create([
+    { 
+      name: "United Airlines",
+      image_url: "https://open-flights.s3.amazonaws.com/United-Airlines.png"
+    }, 
+    { 
+      name: "AirAsia",
+      image_url: "https://open-flights.s3.amazonaws.com/AirAsia.png"
+    },
+    { 
+      name: "Delta Airways",
+      image_url: "https://open-flights.s3.amazonaws.com/Delta.png" 
+    }, 
+    { 
+      name: "AeroFlot Airlines",
+      image_url: "https://open-flights.s3.amazonaws.com/Aeroflot.png"
+    }, 
+    { 
+      name: "Spark Airways",
+      image_url: "https://open-flights.s3.amazonaws.com/Qantas-Airways.png"
+    }, 
+    { 
+      name: "American Airlines",
+      image_url: "https://open-flights.s3.amazonaws.com/American-Airlines.png" 
+    },
+    {
+      name: "Philippine Airlines",
+      image_url: "https://open-flights.s3.amazonaws.com/Philippine-Airlines.png" 
+    },
+    {
+      name: "Cebu Pacific Air",
+      image_url: "https://open-flights.s3.amazonaws.com/Cebu-Pacific.png" 
+    }
+  ])
+end
+
+data_destroyer
+data_creator
