@@ -208,6 +208,8 @@ GEM
     semantic_range (3.0.0)
     sendgrid-ruby (6.4.0)
       ruby_http_client (~> 3.4)
+    shoulda-matchers (5.1.0)
+      activesupport (>= 5.2.0)
     sidekiq (6.4.0)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
@@ -276,6 +278,7 @@ DEPENDENCIES
   rspec_junit_formatter
   sass-rails (~> 5.0)
   sendgrid-ruby
+  shoulda-matchers (~> 5.0)
   sidekiq
   spring
   spring-watcher-listen (~> 2.0.0)
