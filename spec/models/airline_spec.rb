@@ -1,6 +1,15 @@
 require "rails_helper"
 
 RSpec.describe Airline, type: :model do
+  describe "relationships" do
+    it { should have_many(:reviews) }
+  end
+
+  describe "validations" do
+    it { should validate_presence_of(:name) }
+    it { should validate_length_of(:name).is_at_most(255) }
+  end
+
   let(:user) { create(:user) }
   let(:airline) { create(:airline) }
   let!(:reviews) { create_list(:review, 2, user_id: user.id, airline_id: airline.id) }
